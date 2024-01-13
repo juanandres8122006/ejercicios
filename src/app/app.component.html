@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">MEJORES JUGADORES DESTACADOS EN ESTE AÑO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-user-card userName="Messi"
+                 profileImage="https://images.mlssoccer.com/image/private/t_editorial_landscape_8_desktop_mobile/mls-mia-prd/xyfcjysnblxkkprtwect.png"
+                 additionalInfo="Información: Nació el 24 de junio de 1987. Jugó en el BarcelonaFC y actualmente está en el Inter de Miami">
+  </app-user-card>
+
+  <app-user-card userName="Cristiano"
+                 profileImage="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/12/22/16716799531322.jpg"
+                 additionalInfo="Información: Jugador de 38 años que juega actualmente en el Al Nassr">
+  </app-user-card>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Colores</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <app-color-list *ngFor="let color of colores" [color]="color"></app-color-list>
+    </ion-list>
+  </ion-content>
+</ion-content>
